@@ -7,9 +7,16 @@ public class Snack5 {
 	public static void main(String[] args) {
 
 		Scanner in = new Scanner(System.in);
+				
+		while (true) {
+			
 		
-		System.out.print("Inserisci una o più parole: ");
+		System.out.print("[0 per uscire] Inserisci una o più parole: ");
 		String phrase = in.nextLine();
+
+		if (phrase.equals("0")) {
+			break;
+		}
 		
 		int pLen = phrase.length();
 
@@ -29,6 +36,8 @@ public class Snack5 {
 		System.out.println("N." + digits + " di numeri");
 		System.out.println("N." + letters + " di lettere");
 		System.out.println("N." + others + " di caratteri non alfanumerici");
+		}
+		in.close();
 	}
 
 }

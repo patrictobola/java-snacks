@@ -8,15 +8,12 @@ public class Snack5 {
 
 		Scanner in = new Scanner(System.in);
 				
-		while (true) {
-			
-		
+//		Apro un ciclo infinito che si stoppa solo se invio "0"
+		while (true) {			
 		System.out.print("[0 per uscire] Inserisci una o più parole: ");
 		String phrase = in.nextLine();
 
-		if (phrase.equals("0")) {
-			break;
-		}
+		if (phrase.equals("0"))	break;
 		
 		int pLen = phrase.length();
 
@@ -37,6 +34,7 @@ public class Snack5 {
 		System.out.println("N." + letters + " di lettere");
 		System.out.println("N." + others + " di caratteri non alfanumerici");
 		}
+		
 		in.close();
 	}
 
